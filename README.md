@@ -1,5 +1,6 @@
 # hljohnson22.github.io
 CS 766 : Computer Vision
+
 Name : Hailey Johnson
 
 # Research Description
@@ -11,6 +12,15 @@ more generalizable. For example, an object detection system that can assist an i
 [figure1.pdf](https://github.com/hljohnson22/hljohnson22.github.io/files/11401113/figure1.pdf)
 
 # Method
+
+Throughout this semester, I have attempted to implement various techniques learned in class and found this challenge more difficult than I was originally anticipating. In the end I split the work into 4 individual parts. 
+
+First I preprocessed the video frames to enhance contrast, remove noise, and decrease glare.
+Second I attempted color-based detection through color thresholding to determine the various pieces in the build. 
+Third, I attempted shape-based detection using contour analysis to identify each Lego piece by its shape. 
+Fourth, assembly detection by comparing the current position of a piece to the expected position in the completed build.
+
+I built my system from scratch in openCv with python to use the various techniques we learned in class.
 
 # Results
 
