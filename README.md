@@ -4,7 +4,7 @@ CS 766 : Computer Vision
 Name : Hailey Johnson
 
 # Research Description
-I work in the People & Robots Laboratory, which is a Human Computer Interaction (HCI) lab. My research focuses on accessibility and educational aids for adults with Down syndrome. The first iteration of the research is to design and develop a tablet application that combines augmented reality, object detection, and multimodal feedback to assist the user in learning a new task. In this project I developed the first iteration of an object detection system that will determine if the user is construcing a Lego set in the correct order, using the correct Lego piece.
+I work in the People & Robots Laboratory, which is a Human Computer Interaction (HCI) lab. My research focuses on accessibility and educational aids for adults with Down syndrome. The first iteration of my research is to design and develop a tablet application that combines augmented reality, object detection, and multimodal feedback to assist the user in learning a new task. In this project I developed the first iteration of an object detection system that will determine if the user is construcing a Lego set in the correct order, using the correct Lego piece.
 
 The main contribution of my research is the development of multimodal technology for adults with Down syndrome that centers on personal and occupational growth by decreasing the time it takes to learn essential skills through a readily available system. However, this work could be
 more generalizable. For example, an object detection system that can assist an individual in working through a task step by step can be used in many other outlets, such as on-the-job training, educational classroom aids, and even home improvement projects with enough data and testing. It can also be used as an extra safety layer to increase quality assurance.
@@ -33,13 +33,23 @@ I have found however the system could be improved. For example, when the pink Le
 
 # Lessons Learned and Future Goals
 
-I ran into tons of difficulties during the development of this project. First I had to collect my own data, I could not find a data set that was what I was looking for, so the data is minimal and very specific. 
+I ran into many difficulties during the development of this project. First I had to collect my own data, I could not find a data set that was what I was looking for, so the data is minimal and very specific. 
 
-I also had difficult time with processing the various images to isolate specific Legos since Legos are similar colors to each other, but also have a wide range of the same color on them due to glare and shadow effects no matter the lighting. I attempted a few ways to remedy this issue. The histogram equalization increased the contrast well, but also increased the shadows. In the 3rd image I filtered out the glare by eliminating a range of colors, and I was closer to what I was looking for. Finally I attempted mean shift filtering, the contrast is visible with less noise and changes in color. However this filtering technique was very slow on my laptop. But, after just arriving back from a conference, I noticed a fast way was presented and I hope to try to implement that in the next few days to test it out. 
+I also had difficult time with processing the various images to isolate specific Legos since Legos are similar colors to each other, but also have a wide range of the same color on them due to glare and shadow effects no matter the lighting. I attempted a few ways to remedy this issue. 
+
+<img width="204" alt="image" src="https://user-images.githubusercontent.com/103539620/236572676-d758b594-3c9e-46d1-adb7-cba7e5f813cf.png">
+The histogram equalization increased the contrast well, but also increased the shadows. 
+
+<img width="186" alt="image" src="https://user-images.githubusercontent.com/103539620/236572709-4af618c8-f698-4347-8a40-ce4b07d002a2.png">
+Filtering out the glare by eliminating a range of colors, and I was closer to what I was looking for. 
+
+<img width="224" alt="image" src="https://user-images.githubusercontent.com/103539620/236572732-5fa87075-a66f-4f38-a373-e120d9efb697.png">
+Mean shift filtering, the contrast is visible with less noise and changes in color. However this filtering technique was very slow on my laptop.
+I ended up using the second option.
 
 It was difficult to determine if the correct Lego was being used and if it is was placed correctly on the set. 
 
 This project could have been improved in many ways and I will continue to improve it for the next couple days and in the future. 
 I would like to eventually collect more data and build this on an ML model opposed to the system I chose for this class project. Additionally I plan on integrating this technology within an AR platform for participant's to evaluate. 
 
-I learned more about the difficulties of colors, videos, and shadows. I think I gained a lot from this project and look forward to making it more robust. !
+I learned more about the difficulties of colors, videos, and shadows. I think I gained a lot from this project and look forward to making it more robust. 
