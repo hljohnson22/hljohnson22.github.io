@@ -31,9 +31,7 @@ I tested my program using videos I knew were the correct ones at a given steps.
 
 The video playing below shows I was able to detect Legos on top of other Legos and I was able to determine the step the participant was on based on the number of bounding boxes found. 
 
-
-
-https://user-images.githubusercontent.com/103539620/236587983-54178cfe-1d0b-49cb-95e0-f168e071409a.mp4
+https://user-images.githubusercontent.com/103539620/236588256-54666f8a-0a6c-4dac-9d7e-d88fbb8b5dd7.mov
 
 
 The video below also shows I was able to detect a different color than just pink
@@ -63,9 +61,8 @@ Filtering out the glare by eliminating a range of colors, and I was closer to wh
 Mean shift filtering, the contrast is visible with less noise and changes in color. However this filtering technique was very slow on my laptop.
 I ended up using the second option.
 
-It was difficult to determine if the correct Lego was being used and if it is was placed correctly on the set. 
+It was difficult to determine if the correct Lego was being used and if it is was placed correctly on the set. Overall, the project is not where I was hoping it would end up, but I am happy with all the knowledge I gained while learning how to design, develop, collect data, and test a system such as this one.
 
-This project could have been improved in many ways and I will continue to improve it for the next couple days and in the future. 
-I would like to eventually collect more data and build this on an ML model opposed to the system I chose for this class project. Additionally I plan on integrating this technology within an AR platform for participant's to evaluate. 
+I will continue to improve this project in the future. I would like to eventually collect more data and build this on an ML model opposed to the system I chose for this class project. Additionally I plan on integrating this technology within an AR platform for participant's to evaluate. 
 
 I learned more about the difficulties of colors, videos, and shadows. I think I gained a lot from this project and look forward to making it more robust. 
