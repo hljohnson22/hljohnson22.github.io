@@ -9,7 +9,7 @@ I work in the People & Robots Laboratory, which is a Human Computer Interaction 
 The main contribution of my research is the development of multimodal technology for adults with Down syndrome that centers on personal and occupational growth by decreasing the time it takes to learn essential skills through a readily available system. However, this work could be
 more generalizable. For example, an object detection system that can assist an individual in working through a task step by step can be used in many other outlets, such as on-the-job training, educational classroom aids, and even home improvement projects with enough data and testing. It can also be used as an extra safety layer to increase quality assurance.
 
-[figure1.pdf](https://github.com/hljohnson22/hljohnson22.github.io/files/11401113/figure1.pdf)
+<img width="1066" alt="Screenshot 2023-05-05 at 7 29 24 PM" src="https://user-images.githubusercontent.com/103539620/236588398-0cde3be8-85e3-45fd-a05b-aa64a515b756.png">
 
 # Method
 
