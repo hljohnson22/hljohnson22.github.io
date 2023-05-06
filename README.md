@@ -13,22 +13,35 @@ more generalizable. For example, an object detection system that can assist an i
 
 # Method
 
-Throughout this semester, I have attempted to implement various techniques learned in class and found this challenge more difficult than I was originally anticipating. In the end I split the work into 4 individual parts. 
+Throughout this semester, I have attempted to implement various techniques learned in class and found this challenge more difficult than I was originally anticipating. In the end I attempted to split the work into 4 individual parts. 
 
 First, I preprocessed the video frames to enhance contrast, remove noise, and decrease glare.
+
 Second, I attempted color-based detection through color thresholding to determine the various pieces in the build. 
+
 Third, I attempted shape-based detection using contour analysis to identify each Lego piece by its shape. 
+
 Fourth, assembly detection by comparing the current position of a piece to the expected position in the completed build.
 
 I built my system from scratch in openCv with python to use the various techniques we learned in class.
 
 # Results
 
-I tested my program using videos I knew were the correct ones at a given steps and then tested it on videos I knew were the wrong steps to determine if it could tell me if I did something incorrectly or not. 
+I tested my program using videos I knew were the correct ones at a given steps.
 
-The video playing on the right here shows I was able to detect Legos on top of other Legos and I was able to determine the step the participant was on based on the number of bounding boxes found. 
+The video playing below shows I was able to detect Legos on top of other Legos and I was able to determine the step the participant was on based on the number of bounding boxes found. 
 
-I have found however the system could be improved. For example, when the pink Legos in the video are next to each other instead, it is not registered as two separate Legos, so building a Lego set with many overlapping colors can be difficult to detect the distinction. I also  realized how important the type of data is. I believe I will attempt to refilm the videos in a different way to have the ability to detect the changes between steps to determine if the user is on the right step at the right time. 
+
+
+https://user-images.githubusercontent.com/103539620/236587983-54178cfe-1d0b-49cb-95e0-f168e071409a.mp4
+
+
+The video below also shows I was able to detect a different color than just pink
+
+https://user-images.githubusercontent.com/103539620/236588115-e780b024-76ce-4f38-8941-cb4c5f1a8e32.mov
+
+
+I have found however the system could be improved in many ways. For example, when the pink Legos in the video are next to each other instead of seperated, it is not registered as two separate Legos, so building a Lego set with many overlapping colors can be difficult to detect the distinction. I also  realized how important the type of data is. I believe if the videos were made in a different way, i.e. to have the ability to detect the changes between steps to determine if the user is on the right step at the right time, the system may be able to handle Legos next to each other and Legos of the same color. 
 
 
 # Lessons Learned and Future Goals
@@ -38,12 +51,15 @@ I ran into many difficulties during the development of this project. First I had
 I also had difficult time with processing the various images to isolate specific Legos since Legos are similar colors to each other, but also have a wide range of the same color on them due to glare and shadow effects no matter the lighting. I attempted a few ways to remedy this issue. 
 
 <img width="204" alt="image" src="https://user-images.githubusercontent.com/103539620/236572676-d758b594-3c9e-46d1-adb7-cba7e5f813cf.png">
+
 The histogram equalization increased the contrast well, but also increased the shadows. 
 
 <img width="186" alt="image" src="https://user-images.githubusercontent.com/103539620/236572709-4af618c8-f698-4347-8a40-ce4b07d002a2.png">
+
 Filtering out the glare by eliminating a range of colors, and I was closer to what I was looking for. 
 
 <img width="224" alt="image" src="https://user-images.githubusercontent.com/103539620/236572732-5fa87075-a66f-4f38-a373-e120d9efb697.png">
+
 Mean shift filtering, the contrast is visible with less noise and changes in color. However this filtering technique was very slow on my laptop.
 I ended up using the second option.
 
