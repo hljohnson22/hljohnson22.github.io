@@ -3,6 +3,8 @@ CS 766 : Computer Vision
 
 Name : Hailey Johnson
 
+Project Title : Multi-step Task Object Detection
+
 # Research Description
 I work in the People & Robots Laboratory, which is a Human Computer Interaction (HCI) lab. My research focuses on accessibility and educational aids for adults with Down syndrome. The first iteration of my research is to design and develop a tablet application that combines augmented reality, object detection, and multimodal feedback to assist the user in learning a new task. In this project I developed the first iteration of an object detection system that will determine if the user is construcing a Lego set in the correct order, using the correct Lego piece.
 
